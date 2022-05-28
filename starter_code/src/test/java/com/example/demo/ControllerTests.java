@@ -184,7 +184,7 @@ public class ControllerTests {
         mcr.setUsername(username);
         mcr.setItemId(itemId);
         mcr.setQuantity(quantity);
-        return cartController.addTocart(mcr);
+        return cartController.addToCart(mcr);
     }
 
     private ResponseEntity<Cart> removeFromCart(String username, Long itemId, int quantity) {
@@ -192,7 +192,7 @@ public class ControllerTests {
         mcr.setUsername(username);
         mcr.setItemId(itemId);
         mcr.setQuantity(quantity);
-        return cartController.removeFromcart(mcr);
+        return cartController.removeFromCart(mcr);
     }
 
     private Cart getNewCart(Long id, User user) {
