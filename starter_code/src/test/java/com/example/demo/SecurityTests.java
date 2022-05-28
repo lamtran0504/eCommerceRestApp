@@ -97,7 +97,7 @@ public class SecurityTests {
         mvc.perform(
                 MockMvcRequestBuilders.post("api/cart/addToCart").content(convertToJson(cartRequest))
                         .contentType(MediaType.APPLICATION_JSON).accept(MediaType.APPLICATION_JSON))
-                .andExpect(status().isForbidden());
+                .andExpect(status().isUnauthorized());
     }
 
     @Test
